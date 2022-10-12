@@ -1,0 +1,195 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("../css/fonts/Gotham-Bold.eot"); /* IE9 Compat Modes */
+    src: url("../css/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("../css/fonts/Gotham-Bold.otf") format("opentype"),
+      /* Open Type Font */ url("../css/fonts/Gotham-Bold.svg") format("svg"),
+      /* Legacy iOS */ url("../css/fonts/Gotham-Bold.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("../css/fonts/Gotham-Bold.woff") format("woff"),
+      /* Modern Browsers */ url("../css/fonts/Gotham-Bold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* font converted using font-converter.net. thank you! */
+  @font-face {
+    font-family: "Gotham-Book";
+    src: url("../css/fonts/Gotham-Book.eot"); /* IE9 Compat Modes */
+    src: url("../css/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("../css/fonts/Gotham-Book.otf") format("opentype"),
+      /* Open Type Font */ url("../css/fonts/Gotham-Book.svg") format("svg"),
+      /* Legacy iOS */ url("../css/fonts/Gotham-Book.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("../css/fonts/Gotham-Book.woff") format("woff"),
+      /* Modern Browsers */ url("../css/fonts/Gotham-Book.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root{
+    --fontBook:"Gotham-Book";
+    --fontBold:"Gotham-Bold";
+    --colorMorado: #52018E;
+    --colorNegro:#000000;
+  }
+
+.tituloPrincipal{
+    text-align: center;
+  }
+.tituloPrincipal h1,.tituloPrincipal h2{
+  margin:2% 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+.listBTN{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+  padding: 2%;
+}
+
+div#areaTrabajo,div#areaDowload{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+
+div.contenidoTemplate{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;    
+}
+
+ /*Primer formato - */
+
+ div.contenidoTemplate.template01{
+    width: 600px;
+    height: 600px;
+    background: url('https://home.ripley.com.pe/minisitios/home/recursos/api-sku/img/fondo.png');
+}
+
+div.contenidoTemplate.template01 .contImg{
+    display: flex;
+    padding: 110px 10px 3px 12px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+div.contenidoTemplate.template01 .contImg .wrap-img{
+    background-color: #fff;
+    position: relative;
+    min-height: 300px;
+    max-height: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div.contenidoTemplate.template01 .contImg .wrap-img img {
+   max-height: 100%;
+   width: auto;
+}
+div.contenidoTemplate.template01 .contImg .wrap-infoPro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 85%;
+    align-items: center;
+    align-content: center;
+    min-height: 100px;
+    height: 100px;
+}
+
+div.contenidoTemplate.template01 .contImg .wrap-infoPro .wrap-description {
+    width: 53%;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 2%;
+    min-height: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--fontBold);
+    margin: 0;
+    color: var(--colorNegro);
+    line-height: 1.3;
+}
+
+div.contenidoTemplate.template01 .contImg .bloq-wrap{
+    width: 40%;
+}
+
+div.contenidoTemplate.template01 .wrap-infoPro .best-price {
+    width: 75%;
+    height: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--fontBold);
+    font-size: 35px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: #5F0092;
+    margin: 0px 0px 5px 0px;
+    letter-spacing: -1px;
+}
+div.contenidoTemplate.template01 .wrap-infoPro .price-dAON{
+    width:100%;
+    font-size: 29px;
+}
+
+div.contenidoTemplate.template01 .wrap-price-normal, .wrap-price-oferta, .wrap-price-aon {
+   font-size: 13px;
+   display: block;
+   width: 100%;
+   min-height: 15px;
+   text-align: center;
+   font-family: var(--fontBook);
+}
+div.contenidoTemplate.template01 .wrap-price-aon span.aon {
+   position: relative;
+   /*left: -15px;*/
+}
+div.contenidoTemplate.template01 .wrap-price-aon span.aon::after {
+   background: url('https://home.ripley.com.pe/minisitios/home/recursos/api-sku/img/TR_v2_min.svg') left bottom 0 no-repeat;
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 25px;
+   right: -38px;
+   top: 0;
+   bottom: 0;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+
+/* Fin primer Formato*/

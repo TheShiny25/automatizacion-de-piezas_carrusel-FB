@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <mini-site-styles>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/style.css">
+    </mini-site-styles>
+    <title>Productos - Carrusel FB</title>
+</head>
+<body>
+    <mini-site>
+        <section class="contenedorPrincipalLanding">
+            <section>
+                <div class="container">
+                    <div class="tituloPrincipal">
+                        <h1>
+                            Lista de Productos - Carrusel FB
+                        </h1>
+                    </div>
+                    <div class="listBTN">
+                        <button id="showProduct" class="btn btn-primary"  onclick="showProduct()">Mostrar Productos</button>
+                    </div>
+                </div>
+            </section>
+            <div id="loadAnimation" class="animation" style="opacity:0">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Cargando...</p>
+            </div>
+            <section id="contentProductGenerados" style="display:none">
+                <div id="areaTrabajo" class="contentProduct">
+                    <!--<div class="contenidoTemplate template01">
+                        <div class="contImg">
+                            <div class="wrap-img">
+                                <img src="https://home.ripley.com.pe/Attachment/WOP_5/2065233144486/2065233144486_2.jpg" alt="">
+                            </div>
+                            <div class="wrap-infoPro">
+                                <p class="wrap-description">
+                                    APPLE WATCH SERIES 3 38MM - SPACE GREY
+                                </p>
+                                <div class="bloq-wrap">
+                                    <span class="wrap-price-aon best-price"><span class="aon">S/ 999</span></span>
+                                    <span class="wrap-price-oferta">precio normal: <span class="pre_internet">S/ 1,099</span></span>
+                                    <span class="wrap-price-normal">precio antes: <span class="pre_normal">S/ 1,179</span></span>
+                                </div
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="container">
+                    <div class="tituloPrincipal">
+                        <h2>
+                            Generar Imágenes - Productos
+                        </h2>
+                    </div>
+                    <div class="listBTN">
+                        <button id="showProductCanvas" class="btn btn-primary" onclick="showProductCanvas()">Mostrar Productos Generados</button>
+                    </div>
+                </div>
+            </section>
+            <div id="loadAnimation2" class="animation" style="opacity:0">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Cargando...</p>
+            </div>
+            <section id="contentProductCanvas" style="display:none"> 
+                <div class="container">
+                    <div class="listBTN">
+                        <button id="dowloadProductCanvas" class="btn btn-primary" onclick="dowloadProductCanvas()">Descargar Imagenes</button>
+                        <button id="loadPage" class="btn btn-warning" onclick="loadPage()">Recargar Pagina</button>
+                    </div>
+                </div>
+                
+                <div id="areaDowload" class="contenedorCanvas"></div>
+            </section>
+        </section>
+    </mini-site>
+    <mini-site-scripts>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.10.8/html-to-image.min.js" integrity="sha512-IetiMzopsrb75HtZydIM8zRv1mlSmV42P0iZVT4sPHxDnhM0I9O8/75bFqlfWoCKTnDB+pFqvoQrlnkgUeShaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+    </mini-site-scripts>
+</body>
+</html>
